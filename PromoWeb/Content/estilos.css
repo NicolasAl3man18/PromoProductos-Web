@@ -1,37 +1,75 @@
-﻿.barra-pc {
-    background-color: #1a1a1a;
+﻿/* 1. La barra con degradado en movimiento continuo */
+.barra-pc {
+ 
+    background: linear-gradient(270deg, #111111, #1e1e2f, #0d1b2a, #111111);
+    background-size: 600% 600%;
+   
+    animation: moverDegradado 10s ease infinite;
     color: #ffffff;
-    height: 60px;
+    height: 65px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 40px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    border-bottom: 1px solid #333333;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
 }
 
+/* 2. Los pasos de la animación del fondo */
+@keyframes moverDegradado {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* 3. Estilo del logo con un pequeño brillo animado o fijo */
 .logo-sitio a {
     color: #ffffff;
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 24px;
+    font-weight: 700;
     text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
 }
 
+    .logo-sitio a:hover {
+        color: #00ffcc;
+        text-shadow: 0 0 8px rgba(0, 255, 204, 0.6); /* Efecto neón al pasar el mouse */
+    }
+
+/* 4. Lista del menú */
 .menu-pc {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 15px; /* Espacio entre cada botón */
     margin: 0;
-    padding: 0;
+    padding: 8px 15px; /* Un poco de relleno para que el amarillo no quede pegado a las letras */
+    background-color: #ffd700; /* Color amarillo */
+    border-radius: 6px; /* Bordes levemente redondeados para que quede prolijo */
 }
 
+    /* 4. Links del menú (les ponemos color oscuro para que resalten bien sobre el fondo amarillo) */
     .menu-pc li a {
-        color: #cccccc;
+        color: #111111; /* Texto oscuro para que contraste con el amarillo */
         text-decoration: none;
         font-size: 16px;
-        font-weight: 500;
-        transition: color 0.2s ease;
+        font-weight: 600;
+        padding: 5px 10px;
+        border-radius: 4px;
+        transition: all 0.3s ease;
     }
 
+        /* 5. Efecto cuando pasas el mouse por encima de un link */
         .menu-pc li a:hover {
-            color: #00ffcc;
+            background-color: rgba(0, 0, 0, 0.15); /* Un sombrido oscuro transparente al pasar el cursor */
+            color: #000000;
         }
