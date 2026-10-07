@@ -1,3 +1,5 @@
 <Solution>
-  <Project Path="PromoWeb/PromoWeb.csproj" />
+  <Project Path="dominio/dominio.csproj" Id="b323d0f0-eca9-4387-bf06-eee52df8c3e0" />
+  <Project Path="negocio/negocio.csproj" Id="7237ea60-ef5d-43b9-b8b6-ff1d9340e060" />
+  <Project Path="PromoWeb/PromoWeb.csproj" Id="b21603b3-b0c1-4943-95d2-8f9faefbb87a" />
 </Solution>

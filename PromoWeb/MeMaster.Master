@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MeMaster.master.cs" Inherits="PromoWeb.MeMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <link href="Content/estilos.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header>
+               <header>
+    <!-- Contenedor principal de la barra -->
+      <div class="barra-pc">
+        
+          <!-- Logo o Título a la izquierda -->
+        <div class="logo-sitio">
+            <a href="Inicio.aspx">Mi Sitio Web</a>
+          </div>
+
+        <!-- Links de navegación a la derecha -->
+          <ul class="menu-pc">
+            <li><a href="Inicio.aspx">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Contacto</a></li>
+         </ul>
+
+       </div>
+
+            </header>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <footer>
+
+
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
