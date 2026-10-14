@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Net.Configuration;
 using System.Data.SqlClient;
 
 namespace negocio
@@ -13,16 +8,16 @@ namespace negocio
         private SqlConnection conexion;
         private SqlCommand comando;
         private SqlDataReader lector;
-        
+
         public SqlDataReader Lector
         {
-            get {  return lector; }
+            get { return lector; }
         }
 
 
         public AccesoDatos()
         {
-            conexion = new SqlConnection("server= .\\SQLEXPRESS; database=CATALOGO_P3_DB; integrated security = true");
+            conexion = new SqlConnection("server= .\\SQLEXPRESS; database=PROMOS_DB; integrated security = true");
             comando = new SqlCommand();
         }
 
@@ -45,7 +40,7 @@ namespace negocio
                 throw ex;
             }
         }
-       
+
         public void ejecutarAccion()
         {
             comando.Connection = conexion;
@@ -58,17 +53,17 @@ namespace negocio
             catch (Exception ex)
             {
 
-                throw ex; 
+                throw ex;
             }
         }
 
         public void cerrarConexion()
         {
-            if(lector != null)
+            if (lector != null)
             {
                 lector.Close();
             }
-            conexion.Close(); 
+            conexion.Close();
         }
 
         public void setearParametros(String nombre, object valor)

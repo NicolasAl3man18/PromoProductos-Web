@@ -14,11 +14,12 @@
         <div class="mb-3">
             <label for="TxtVaucher" class="form-label">Ingrese Voucher</label>
             
-            <asp:TextBox ID="TxtVaucher" CssClass="form-control input-vaucher-grande" runat="server" placeholder="Voucher"></asp:TextBox>
+            <asp:TextBox ID="TxtVaucher" CssClass="form-control input-vaucher-grande" runat="server" placeholder="Ingrese Por Favor Su Voucher"></asp:TextBox>
         </div>
         
         <div>
             <asp:Button ID="btnVaucher" CssClass="btn btn-primary" runat="server" OnClick="btnVaucher_Click" Text="Verificar" />
+            <asp:Label ID="lbMensaje" runat="server" fontColor="red"></asp:Label>
         </div>
     </div>
     <div class="col-2"></div>

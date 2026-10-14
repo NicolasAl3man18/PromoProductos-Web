@@ -59,6 +59,7 @@
   <ItemGroup>
     <Compile Include="AccesoDatos.cs" />
     <Compile Include="ArticuloNegocio.cs" />
+    <Compile Include="VoucherNegocio.cs" />
     <Compile Include="ImagenNegocio.cs" />
     <Compile Include="MarcaNegocio.cs" />
     <Compile Include="CategoriaNegocio.cs" />
