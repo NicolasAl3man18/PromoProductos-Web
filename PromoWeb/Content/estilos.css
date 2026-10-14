@@ -1,36 +1,18 @@
 ﻿/* 1. La barra con degradado en movimiento continuo */
 .barra-pc {
- 
-    background: linear-gradient(270deg, #111111, #1e1e2f, #0d1b2a, #111111);
-    background-size: 600% 600%;
-   
-    animation: moverDegradado 10s ease infinite;
-    color: #ffffff;
+    background-color: #111111;
     height: 65px;
+    /* 1. Activamos Flexbox (si ya lo tenías, estas dos líneas centran todo) */
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 40px;
-    border-bottom: 1px solid #333333;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    justify-content: center; /* Centra el logo horizontalmente (de izquierda a derecha) */
+    align-items: center; /* Centra el logo verticalmente (de arriba a abajo) */
+
+    border-bottom: 1px dashed #111111;
+    box-shadow: 0 4px 15px rgba(255, 255, 0, 0.6);
 }
 
-/* 2. Los pasos de la animación del fondo */
-@keyframes moverDegradado {
-    0% {
-        background-position: 0% 50%;
-    }
 
-    50% {
-        background-position: 100% 50%;
-    }
 
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-/* 3. Estilo del logo con un pequeño brillo animado o fijo */
 .logo-sitio a {
     color: #ffffff;
     font-size: 24px;
@@ -42,34 +24,23 @@
 }
 
     .logo-sitio a:hover {
-        color: #00ffcc;
-        text-shadow: 0 0 8px rgba(0, 255, 204, 0.6); /* Efecto neón al pasar el mouse */
+        color: yellow;
+        text-shadow: 0 0 8px rgba(255, 255, 0, 0.8);
     }
-
-/* 4. Lista del menú */
-.menu-pc {
-    list-style: none;
-    display: flex;
-    gap: 15px; /* Espacio entre cada botón */
-    margin: 0;
-    padding: 8px 15px; /* Un poco de relleno para que el amarillo no quede pegado a las letras */
-    background-color: #ffd700; /* Color amarillo */
-    border-radius: 6px; /* Bordes levemente redondeados para que quede prolijo */
+   
+      
+.footer-copy h2 {
+    color: black;
+    font-size: 20px; 
+    font-weight: 500; 
+    margin: 0; 
+    letter-spacing: 0.5px;
 }
 
-    /* 4. Links del menú (les ponemos color oscuro para que resalten bien sobre el fondo amarillo) */
-    .menu-pc li a {
-        color: #111111; /* Texto oscuro para que contraste con el amarillo */
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: 600;
-        padding: 5px 10px;
-        border-radius: 4px;
-        transition: all 0.3s ease;
-    }
-
-        /* 5. Efecto cuando pasas el mouse por encima de un link */
-        .menu-pc li a:hover {
-            background-color: rgba(0, 0, 0, 0.15); /* Un sombrido oscuro transparente al pasar el cursor */
-            color: #000000;
-        }
+.input-vaucher-grande {
+    width: 100% !important;
+    max-width: 800px;
+    height: 48px;
+    font-size: 1.1rem;
+}
+       
