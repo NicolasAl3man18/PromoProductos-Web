@@ -31,8 +31,9 @@ namespace PromoWeb
                 lbMensaje.ForeColor = System.Drawing.Color.Red;
                 lbMensaje.Text = "No se ingresó ningún voucher.";
 
-
+                return;
             }
+
             bool aux = validarVoucher(unificar);
 
 

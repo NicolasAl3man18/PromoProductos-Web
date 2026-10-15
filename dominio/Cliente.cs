@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace dominio
 {
-    internal class Cliente
+    public class Cliente
     {
 
         public Cliente() { }
 
-        public int IdCliente_cli { get; }
+        public int IdCliente_cli { get; set; }
         public string Documento_cli { get; set; }
         public string Nombre_cli { get; set; }
         public string Apellido_cli { get; set; }

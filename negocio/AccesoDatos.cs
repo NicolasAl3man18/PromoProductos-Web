@@ -26,6 +26,11 @@ namespace negocio
             comando.CommandType = System.Data.CommandType.Text;
             comando.CommandText = consulta;
         }
+        public void storedProcedure(string st){
+        comando.CommandType=System.Data.CommandType.StoredProcedure;
+            comando.CommandText=st;
+        
+        }
 
         public void ejecutarLetura()
         {
@@ -70,6 +75,7 @@ namespace negocio
         {
             comando.Parameters.AddWithValue(nombre, valor);
         }
+       
 
 
 
